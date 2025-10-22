@@ -41,7 +41,7 @@ morse_tree/
     └── Nodo.java                 # Estrutura do nó (símbolo, esquerdo, direito)
 ```
 
-**Pacote:** `morse`
+**Pacote:** `morse_tree`
 
 **Arquivos:**
 - **Nodo.java:** nó mínimo com `char simbolo`, `Nodo esquerdo`, `Nodo direito`.  
