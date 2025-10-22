@@ -11,7 +11,7 @@ Professor
 
 Andrey Cabral Meira
 
-Equipe (ordem alfabética)
+Equipe:
 
 Henry Mendes
 Kaue Fontoura
