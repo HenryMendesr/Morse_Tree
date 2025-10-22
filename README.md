@@ -1,14 +1,26 @@
 Árvore Binária de Código Morse (Java)
 
-Implementação acadêmica, em Java, de uma árvore binária para Código Morse, onde ponto (.) navega para a esquerda e traço (-) para a direita até o nó que armazena o símbolo. O programa fornece um menu no console para popular a árvore com o alfabeto padrão, inserir novos mapeamentos, codificar e decodificar mensagens, e exibir a árvore.
+Implementação acadêmica, em Java, de uma árvore binária para Código Morse, onde ponto (.) navega para a esquerda e traço (-) para a direita até o nó que armazena o símbolo.
+O programa fornece um menu no console para popular a árvore com o alfabeto padrão, inserir novos mapeamentos, codificar e decodificar mensagens, e exibir a árvore.
 
-Universidade: PUCPR
-Professor: Andrey Cabral Meira
-Equipe: Henry Mendes, Kaue Fontoura, Matheus Bernardi, Rafael Maluf
+Universidade
+
+Pontifícia Universidade Católica do Paraná (PUCPR)
+
+Professor
+
+Andrey Cabral Meira
+
+Equipe (ordem alfabética)
+
+Henry Mendes
+Kaue Fontoura
+Matheus Bernardi
+Rafael Maluf
 
 Regras e restrições usadas no trabalho
 
-Sem estruturas prontas de dados: não usar List, ArrayList, Map, StringBuilder etc.
+Sem estruturas prontas de dados: não usar List, ArrayList, Map, StringBuilder, etc.
 
 Permitido: String, tipos primitivos (int, float), try-catch, throws e funções básicas de entrada.
 
@@ -20,15 +32,16 @@ Sem dependências externas e sem emojis.
 
 O código deste repositório segue essas restrições.
 
-Estrutura de pastas/arquivos
+Estrutura de pastas e arquivos
 src/
 └── morse/
-    ├── ArvoreBinariaMorse.java  # Lógica da árvore (inserir/buscar/remover, codificar/decodificar, exibir, popular padrão)
-    ├── Main.java                # Programa principal com menu de console
-    └── Nodo.java                # Estrutura do nó (simbolo, esquerdo, direito)
+    ├── ArvoreBinariaMorse.java   # Lógica da árvore (inserir/buscar/remover, codificar/decodificar, exibir, popular padrão)
+    ├── Main.java                 # Programa principal com menu de console
+    └── Nodo.java                 # Estrutura do nó (símbolo, esquerdo, direito)
 
 
 Pacote: morse
+
 Arquivos:
 
 Nodo.java: nó mínimo com char simbolo, Nodo esquerdo, Nodo direito.
@@ -51,17 +64,17 @@ morseParaTexto(String codigoMorse)
 
 exibir()
 
-popularPadrao() → carrega A–Z e 0–9 conforme a tabela tradicional
+popularPadrao() → carrega A–Z e 0–9 conforme a tabela tradicional.
 
 Main.java: cria a árvore, chama popularPadrao() e apresenta menu interativo no console.
 
 Pré-requisitos
 
-Java JDK 17+ (funciona também em 11+ se o compilador aceitar o código)
+Java JDK 17+ (funciona também em 11+ se o compilador aceitar o código).
 
-Terminal do sistema (Windows, macOS ou Linux)
+Terminal do sistema (Windows, macOS ou Linux).
 
-Verifique:
+Verifique sua instalação com:
 
 java -version
 javac -version
@@ -81,7 +94,7 @@ javac morse\*.java
 java morse.Main
 
 
-Se usar IDE (VS Code/IntelliJ), configure src como pasta de fontes e mantenha o package morse.
+Se usar uma IDE (VS Code ou IntelliJ), configure src como pasta de fontes e mantenha o package morse.
 
 Uso – fluxo geral
 
@@ -89,21 +102,21 @@ Ao iniciar:
 
 A árvore é criada e popularPadrao() insere os códigos de A–Z e 0–9.
 
-O menu do Main oferece operações típicas como:
+O menu do Main oferece operações como:
 
-Inserir mapeamento: informe um código Morse (ex.: .-.-) e um símbolo (X).
+Inserir novo mapeamento (código Morse e símbolo).
 
-Codificar texto em Morse: converte A–Z e 0–9 para pontos/traços.
+Codificar texto em Morse.
 
-Decodificar Morse para texto: letras em Morse separadas por espaço simples.
+Decodificar Morse para texto.
 
-Remover um mapeamento existente pelo caminho Morse.
+Remover um mapeamento existente.
 
 Exibir a árvore no console.
 
-Sair.
+Sair do programa.
 
-Observação: a organização exata das opções pode variar conforme o texto do menu no seu Main.java, mas os métodos presentes na árvore suportam as operações descritas.
+A ordem e nomes das opções podem variar conforme a versão do Main.java, mas as funções da árvore suportam todas as operações acima.
 
 Exemplos rápidos
 Decodificar
@@ -140,9 +153,16 @@ Saída:
 
 Inserir mapeamento
 
-Código: .-.-
+Código:
 
-Símbolo: X
+.-.--
+
+
+Símbolo:
+
+X
+
+
 Resultado: cria nós intermediários se necessário e grava X no nó destino.
 
 Decisões de implementação
@@ -153,17 +173,17 @@ Operações somente com String e tipos primitivos, sem coleções prontas.
 
 popularPadrao() monta a base completa de A–Z e 0–9.
 
-Métodos adicionais dão suporte bidirecional:
+Métodos adicionais para suporte bidirecional:
 
-textoParaMorse para codificação
+textoParaMorse() → codificação.
 
-morseParaTexto para decodificação
+morseParaTexto() → decodificação.
 
-buscarMorsePorCaractere para localizar o caminho de um símbolo na árvore
+buscarMorsePorCaractere() → busca reversa de símbolo.
 
 Testes manuais sugeridos
 
-Popular padrão e decodificar ... --- ... → SOS.
+Popular a árvore padrão e decodificar ... --- ... → SOS.
 
 Codificar PUCPR → .--. ..- -.-. .--. .-..
 
@@ -171,4 +191,4 @@ Inserir um novo mapeamento (.-.- → X) e validar com codificar/decodificar.
 
 Remover um mapeamento e verificar comportamento ao decodificar aquele caminho.
 
-Exibir a árvore e conferir a distribuição esquerda/direita por ./-.
+Exibir a árvore e conferir a distribuição esquerda/direita conforme . e -.
