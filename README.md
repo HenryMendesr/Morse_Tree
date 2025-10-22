@@ -3,11 +3,11 @@
 Implementação acadêmica, em Java, de uma árvore binária para Código Morse, onde ponto (.) navega para a esquerda e traço (-) para a direita até o nó que armazena o símbolo.
 O programa fornece um menu no console para popular a árvore com o alfabeto padrão, inserir novos mapeamentos, codificar e decodificar mensagens, e exibir a árvore.
 
-Universidade
+Universidade:
 
 Pontifícia Universidade Católica do Paraná (PUCPR)
 
-Professor
+Professor:
 
 Andrey Cabral Meira
 
@@ -18,7 +18,7 @@ Kaue Fontoura
 Matheus Bernardi
 Rafael Maluf
 
-Regras e restrições usadas no trabalho
+Regras e restrições usadas no trabalho:
 
 Sem estruturas prontas de dados: não usar List, ArrayList, Map, StringBuilder, etc.
 
@@ -28,7 +28,7 @@ length apenas em String.
 
 Árvore binária implementada manualmente com nós encadeados (Nodo com esquerdo e direito).
 
-Sem dependências externas e sem emojis.
+Sem dependências externas.
 
 O código deste repositório segue essas restrições.
 
