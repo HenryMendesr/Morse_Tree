@@ -33,8 +33,8 @@ Sem dependências externas.
 O código deste repositório segue essas restrições.
 
 Estrutura de pastas e arquivos
-src/
-└── morse/
+
+Morse_Tree/
     ├── ArvoreBinariaMorse.java   # Lógica da árvore (inserir/buscar/remover, codificar/decodificar, exibir, popular padrão)
     ├── Main.java                 # Programa principal com menu de console
     └── Nodo.java                 # Estrutura do nó (símbolo, esquerdo, direito)
