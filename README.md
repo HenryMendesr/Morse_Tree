@@ -167,7 +167,7 @@ Resultado: cria nós intermediários se necessário e grava `X` no nó destino.
 
 ## Decisões de implementação
 
-- Navegação por string: `.` segue para `esquerdo`, `-` para `direito`.  
+- Navegação por string: `.` segue para nodo `esquerdo`, `-` para nodo `direito`.  
 - Operações **somente com String e tipos primitivos**, sem coleções prontas.  
 - `popularPadrao()` monta a base completa de **A–Z** e **0–9**.  
 - Métodos adicionais para suporte bidirecional:
