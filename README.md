@@ -4,7 +4,7 @@ Implementação acadêmica, em Java, de uma árvore binária para Código Morse,
 
 Universidade: PUCPR
 Professor: Andrey Cabral Meira
-Equipe (ordem alfabética): Henry Mendes, Kaue Fontoura, Matheus Bernardi, Rafael Maluf
+Equipe: Henry Mendes, Kaue Fontoura, Matheus Bernardi, Rafael Maluf
 
 Regras e restrições usadas no trabalho
 
