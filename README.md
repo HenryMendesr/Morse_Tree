@@ -5,13 +5,13 @@ O programa fornece um **menu no console** para popular a árvore com o alfabeto 
 
 ---
 
-### Universidade  
+### Universidade: 
 **Pontifícia Universidade Católica do Paraná (PUCPR)**  
 
-### Professor  
+### Professor: 
 **Andrey Cabral Meira**
 
-### Equipe (ordem alfabética)  
+### Equipe:  
 **Henry Mendes**  
 **Kaue Fontoura**  
 **Matheus Bernardi**  
@@ -25,7 +25,7 @@ O programa fornece um **menu no console** para popular a árvore com o alfabeto 
 - Permitido: `String`, tipos primitivos (`int`, `float`), `try-catch`, `throws` e funções básicas de entrada.  
 - `length` apenas em **String**.  
 - Árvore binária implementada manualmente com nós encadeados (`Nodo` com `esquerdo` e `direito`).  
-- Sem dependências externas e sem emojis.
+- Sem dependências externas.
 
 O código deste repositório segue essas restrições.
 
@@ -34,8 +34,8 @@ O código deste repositório segue essas restrições.
 ## Estrutura de pastas e arquivos
 
 ```
-src/
-└── morse/
+
+morse_tree/
     ├── ArvoreBinariaMorse.java   # Lógica da árvore (inserir/buscar/remover, codificar/decodificar, exibir, popular padrão)
     ├── Main.java                 # Programa principal com menu de console
     └── Nodo.java                 # Estrutura do nó (símbolo, esquerdo, direito)
